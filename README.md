@@ -1,6 +1,6 @@
 #Check Sites#
 
-Check Sites is a script to check hourly if each site in a list is online.
+Check Sites is a script to check hourly if each site in a list is online and send a daily report with that informations.
 
 ##What is Check Sites?##
 
