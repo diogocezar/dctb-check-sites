@@ -18,7 +18,7 @@
 
 		public function sendReport($file_online, $file_offline, $emails){
 
-			global $title_report, $label_online, $from_email, $from_name, $from_email, $debug, $mandrill_key, $sent_successfully, $send_error;
+			global $title_report, $label_online, $label_offline, $from_email, $from_name, $from_email, $debug, $mandrill_key, $sent_successfully, $send_error;
 
 			$content = "";
 
