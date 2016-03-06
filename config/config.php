@@ -3,8 +3,9 @@
 	* Sites to check
 	*/
 	$sites = array(
-		'http://www.google.com',
-		'http://www.yahoo.com',
+		'http://www.diogocezar.com',
+		'http://www.padariajoia.com.br',
+		'http://www.creativetroops.com.br'
 	);
 
 	/**
@@ -25,25 +26,22 @@
 	/**
 	* Hour to send report
 	*/
-	$hour_send_report = 16;
+	$hour_send_report = 2;
 
 	/**
 	* From email
 	*/
-	$from_email = "";
+	$from_email = "xgordo@gmail.com";
 
 	/**
 	* From name
 	*/
-	$from_name = "Your Server Name";
+	$from_name = "DCBuster Server";
 
 	/**
 	* Emails to send report
 	*/
-	$emails_report = array(
-		'email1@gmail.com',
-		'email2@gmail.com'
-	);
+	$emails_report = array('xgordo@gmail.com' => 'Diogo Cezar');
 
 	/**
 	* Mail Type Key to send an Email
@@ -53,12 +51,12 @@
 	/**
 	* Mandrill Key to send an Email
 	*/
-	$mandrill_key = "";
+	$mandrill_key = "RbFB5br4ZITKzG8E65pEPQ";
 
 	/**
 	* SendGrid Key to send an Email
 	*/
-	$sendgrid_key = "";
+	$sendgrid_key = "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";
 
 	/**
 	* Sent successfully
@@ -73,5 +71,5 @@
 	/**
 	* Debug
 	*/
-	$debug = false;
+	$debug = true;
 ?>
