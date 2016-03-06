@@ -15,7 +15,7 @@
 			return false;
 		}
 		public function sendReport($file_online, $file_offline, $emails){
-			global $title_report, $label_online, $label_offline, $from_email, $from_name, $from_email, $debug, $mandrill_key, $sent_successfully, $send_error;
+			global $title_report, $label_online, $label_offline, $from_email, $from_name, $from_email, $debug, $mandrill_key, $sendgrid_key, $sent_successfully, $send_error, $mail_type;
 			$content = "";
 			$file_online_read = fopen($file_online, "r");
 			if(filesize($file_online) > 0)
@@ -40,6 +40,7 @@
 			$content .= "</body></html>";
 			file_put_contents($file_online, "");
 			file_put_contents($file_offline, "");
+			$subject = $title_report . ' - ' . date("d-m-Y H:i:s");
 			switch($mail_type){
 				case 'mandrill' : 
 					try {
@@ -50,7 +51,7 @@
 						}
 						$message  = array(
 									'html' 		 => $content,
-									'subject' 	 => $title_report . ' - ' . date("d-m-Y H:i:s"),
+									'subject' 	 => $subject,
 									'from_email' => $from_email,
 									'from_name'  => $from_name,
 									'headers' 	 => array('Reply-To' => $from_email),
@@ -85,6 +86,7 @@
 						}
 					}
 					catch(\SendGrid\Exception $e) {
+						print($e);
 						if($debug){
 							echo $send_error;
 						}
