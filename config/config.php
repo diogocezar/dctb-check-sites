@@ -3,16 +3,15 @@
 	* Sites to check
 	*/
 	$sites = array(
-		'http://www.diogocezar.com',
-		'http://www.padariajoia.com.br',
-		'http://www.creativetroops.com.br'
+		'http://www.google.com',
+		'http://www.yahoo.com'
 	);
 
 	/**
 	* Report title
 	*/
 
-	$title_report = "DCBuster Server - Daily Report of Sites Status";
+	$title_report = "Daily Report of Sites Status";
 
 	/**
 	* Label sites online
@@ -35,18 +34,18 @@
 	/**
 	* From email
 	*/
-	$from_email = "xgordo@gmail.com";
+	$from_email = "email@server";
 
 	/**
 	* From name
 	*/
-	$from_name = "DCBuster Server";
+	$from_name = "Server";
 
 	/**
 	* Emails to send report
 	*/
 
-	$emails_report = array('xgordo@gmail.com' => 'Diogo Cezar');
+	$emails_report = array('email@server.com' => 'Name');
 
 	/**
 	* Email type
@@ -58,13 +57,13 @@
 	* SendGrid Key to send an Email
 	*/
 
-	$sendgrid_key = "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";
+	$sendgrid_key = "";
 
 	/**
 	* Mandrill Key to send an Email
 	*/
 
-	$mandrill_key = "RbFB5br4ZITKzG8E65pEPQ";
+	$mandrill_key = "";
 
 	/**
 	* Sent successfully
