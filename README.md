@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/diogocezar/dctb-check-sites.png?label=ready&title=Ready)](https://waffle.io/diogocezar/dctb-check-sites)
 #Check Sites#
 
 Check Sites is a script to check hourly if each site in a list is online and send a daily report with that informations.
